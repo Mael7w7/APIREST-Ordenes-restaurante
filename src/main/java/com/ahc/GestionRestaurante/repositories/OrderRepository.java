@@ -14,3 +14,4 @@ public interface OrderRepository extends JpaRepository<OrderEntity, Long> {
             "LEFT JOIN FETCH o.customer c")
     List<OrderEntity> findAllWithDishesAndCustomer();
 }
+
